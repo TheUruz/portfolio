@@ -1,0 +1,21 @@
+:root {
+  --slide-range: 20px;
+}
+
+@keyframes slide_away {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(var(--slide-range));
+  }
+}
+
+@keyframes slide_back {
+  0% {
+    transform: translateX(var(--slide-range));
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

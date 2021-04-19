@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;700&display=swap");
+@import "animations.css";
+@import "hero.css";
 
 /* VARIABLES */
 :root {
@@ -17,6 +19,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
+  cursor: default;
 }
 
 html,
@@ -65,43 +68,4 @@ header {
   background: linear-gradient(#444444, #6b6b6b);
   height: 100%;
   width: var(--left_bar_size);
-}
-
-.hero_wrapper {
-  padding-left: var(--left_bar_size);
-}
-
-.hero {
-  display: block;
-  font-size: 18px;
-  padding: 1rem;
-  padding-left: var(--hero-padding-left);
-  background-color: white;
-}
-
-.hero:first-child {
-  padding-top: 5rem;
-}
-
-.hero .macro_block :last-child {
-  margin-bottom: var(--hero-div-margin);
-}
-
-.macro_block > * {
-  display: block;
-  margin: var(--spacing-in-hero-div);
-}
-
-.macro_block > p {
-  font-weight: bold;
-}
-
-.macro_block ul {
-  padding-left: 2rem;
-  margin: inherit;
-}
-
-.macro_block ul li {
-  padding: 0.625rem;
-  list-style-type: disc;
 }

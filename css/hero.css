@@ -1,0 +1,46 @@
+.hero_wrapper {
+  padding-left: var(--left_bar_size);
+}
+
+.hero {
+  display: block;
+  font-size: 18px;
+  padding: 1rem;
+  padding-left: var(--hero-padding-left);
+  background-color: white;
+}
+
+.hero:first-child {
+  padding-top: 5rem;
+}
+
+.hero .macro_block :last-child {
+  margin-bottom: var(--hero-div-margin);
+}
+
+.macro_block > * {
+  display: block;
+  margin: var(--spacing-in-hero-div);
+}
+
+.macro_block > p {
+  font-weight: bold;
+}
+
+.macro_block ul {
+  padding-left: 2rem;
+  margin: inherit;
+}
+
+.macro_block ul li {
+  padding: 0.625rem;
+  list-style-type: disc;
+  animation-duration: 0.2s;
+  animation-name: slide_back;
+}
+
+.macro_block ul li:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: slide_away;
+}
