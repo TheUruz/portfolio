@@ -1,7 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;700&display=swap");
+
+/* VARIABLES */
+:root {
+  --default_border_radius: 5px;
+  --header_height: 6rem;
+  --left_bar_size: 12rem;
+  --hero-padding-left: 3rem;
+  --hero-div-margin: 10rem;
+  --spacing-in-hero-div: 1rem;
+}
+
 * {
-  background-color: black;
-  color: white;
   margin: 0;
   padding: 0;
   border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: var(--header_height);
+  display: block;
+  position: fixed;
+  background: linear-gradient(#000000, #444444);
+}
+
+.inner_header {
+  width: 80%;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+  color: white;
+}
+
+.inner_header_left {
+  display: table-cell;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.inner_header_left span {
+  font-weight: 100;
+}
+
+.mainframe_container {
+  padding-top: var(--header_height);
+  height: 2000px; /* rimuovere in seguito */
+  background-color: white;
+  display: block;
+}
+
+.left_bar_wrapper {
+  position: fixed;
+  background: linear-gradient(#444444, #6b6b6b);
+  height: 100%;
+  width: var(--left_bar_size);
+}
+
+.hero_wrapper {
+  padding-left: var(--left_bar_size);
+}
+
+.hero {
+  display: block;
+  font-size: 18px;
+  padding: 1rem;
+  padding-left: var(--hero-padding-left);
+  background-color: white;
+}
+
+.hero:first-child {
+  padding-top: 5rem;
+}
+
+.hero .macro_block :last-child {
+  margin-bottom: var(--hero-div-margin);
+}
+
+.macro_block > * {
+  display: block;
+  margin: var(--spacing-in-hero-div);
+}
+
+.macro_block > p {
+  font-weight: bold;
+}
+
+.macro_block ul {
+  padding-left: 2rem;
+  margin: inherit;
+}
+
+.macro_block ul li {
+  padding: 0.625rem;
+  list-style-type: disc;
 }
