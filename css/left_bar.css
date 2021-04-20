@@ -4,8 +4,7 @@
 }
 
 .left_bar_wrapper {
-  position: fixed;
-  background: linear-gradient(#444444, #6b6b6b);
-  height: 100%;
   width: var(--left_bar_size);
+  background-color: #336699;
+  display: table-cell;
 }

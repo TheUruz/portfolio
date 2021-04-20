@@ -5,21 +5,13 @@
   --spacing-in-hero-div: 1rem;
 }
 
-.mainframe_container {
-  padding-top: var(--header_height);
-  /*height: 2000px;*/
-  background-color: white;
-  display: block;
-}
-
-.hero_wrapper {
-  padding-left: var(--left_bar_size);
+.hero_container {
+  display: table-cell;
 }
 
 .hero {
   display: block;
   font-size: 18px;
-  padding: 1rem;
   padding-left: var(--hero-padding-left);
   background-color: white;
 }
@@ -28,7 +20,7 @@
   padding-top: 5rem;
 }
 
-.hero > :not(:last-child) {
+.macro_block {
   margin-bottom: var(--hero-div-margin);
 }
 

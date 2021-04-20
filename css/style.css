@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;700&display=swap");
 @import "animations.css";
 @import "header.css";
+@import "footer.css";
 @import "hero.css";
 @import "left_bar.css";
 @import "media_queries.css";
@@ -14,16 +15,20 @@
   margin: 0;
   padding: 0;
   border: 0;
-  list-style: none;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
   cursor: default;
 }
 
-html,
 body {
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
   display: block;
+}
+
+.mainframe_container {
+  padding-top: var(--header_height);
+  /*height: 1000px;*/
+  width: 100%;
+  background-color: white;
+  display: table;
 }

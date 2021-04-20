@@ -8,7 +8,7 @@ header {
   height: var(--header_height);
   display: block;
   position: fixed;
-  background: linear-gradient(#000000, #444444);
+  background-color: #1d2833;
 }
 
 .inner_header {
@@ -26,5 +26,5 @@ header {
 }
 
 .inner_header_left span {
-  font-weight: 100;
+  font-weight: 200;
 }

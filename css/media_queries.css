@@ -15,12 +15,18 @@
     width: 100%;
     padding-left: 0;
   }
-
   .macro_block * {
     animation: none !important;
   }
-
   .macro_block :last-child {
     margin-bottom: var(--smartphone_outer_div_margin);
+  }
+  footer .inner_footer .fa {
+    letter-spacing: 1rem;
+    font-size: 2rem;
+  }
+  footer .inner_footer .contatti {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
   }
 }
