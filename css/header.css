@@ -1,0 +1,30 @@
+/* VARIABLES */
+:root {
+  --header_height: 6rem;
+}
+
+header {
+  width: 100%;
+  height: var(--header_height);
+  display: block;
+  position: fixed;
+  background: linear-gradient(#000000, #444444);
+}
+
+.inner_header {
+  width: 80%;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+  color: white;
+}
+
+.inner_header_left {
+  display: table-cell;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.inner_header_left span {
+  font-weight: 100;
+}

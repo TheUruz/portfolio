@@ -1,3 +1,17 @@
+/* VARIABLES */
+:root {
+  --hero-padding-left: 3rem;
+  --hero-div-margin: 10rem;
+  --spacing-in-hero-div: 1rem;
+}
+
+.mainframe_container {
+  padding-top: var(--header_height);
+  /*height: 2000px;*/
+  background-color: white;
+  display: block;
+}
+
 .hero_wrapper {
   padding-left: var(--left_bar_size);
 }
@@ -14,7 +28,7 @@
   padding-top: 5rem;
 }
 
-.hero .macro_block :last-child {
+.hero > :not(:last-child) {
   margin-bottom: var(--hero-div-margin);
 }
 

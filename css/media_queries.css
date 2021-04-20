@@ -1,0 +1,26 @@
+/* VARIABLES */
+:root {
+  --smartphone_outer_div_margin: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .left_bar_wrapper {
+    display: none;
+  }
+  .hero_wrapper {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hero {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .macro_block * {
+    animation: none !important;
+  }
+
+  .macro_block :last-child {
+    margin-bottom: var(--smartphone_outer_div_margin);
+  }
+}
