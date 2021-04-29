@@ -15,11 +15,16 @@
     width: 100%;
     padding-left: 0;
   }
-  .macro_block * {
-    animation: none !important;
-  }
   .macro_block :last-child {
     margin-bottom: var(--smartphone_outer_div_margin);
+  }
+  .macro_block ul {
+    padding: 0px;
+    text-align: center;
+  }
+  .macro_block ul li {
+    animation: none !important;
+    list-style-type: none;
   }
   footer .inner_footer .fa {
     letter-spacing: 1rem;
