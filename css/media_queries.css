@@ -27,8 +27,10 @@
     list-style-type: none;
   }
   footer .inner_footer .fa {
-    letter-spacing: 1rem;
     font-size: 2rem;
+  }
+  footer .inner_footer .fa:not(:last-child) {
+    letter-spacing: 2rem;
   }
   footer .inner_footer .contatti {
     font-size: 0.75rem;
