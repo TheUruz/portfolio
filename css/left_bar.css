@@ -2,24 +2,64 @@
 :root {
   --left_bar_size: 12rem;
   --nav-icon-width: 3.125rem;
+  --nav-border-width: 1rem;
+}
+
+.left_bar_wrapper {
+  display: flex;
 }
 
 .nav {
   width: var(--left_bar_size);
   height: 100%;
-  position: relative;
+  display: block;
   background-color: #336699;
-  transition: width 0.2s;
+  transition: width 0.1s;
   flex-shrink: 0;
+  order: 1;
 }
 
-.nav--collapsed {
+.nav__border {
+  width: var(--nav-border-width);
+  height: 100%;
+  flex-shrink: 0;
+  background-color: #254a6e;
+  order: 2;
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__border:hover {
+  background-color: #162d44;
+  transition: 0.2s;
+}
+
+.nav__collapsed {
   width: var(--nav-icon-width);
+  transition: width 0.2s;
+}
+
+.nav__collapsed .nav__label {
+  display: none;
 }
 
 .nav__link {
   display: flex;
   align-items: center;
+}
+
+.nav__icon_container {
+  width: var(--nav-icon-width);
+  height: var(--nav-icon-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .nav a {

@@ -5,10 +5,6 @@
   --spacing-in-hero-div: 1rem;
 }
 
-.hero_container {
-  display: table-cell;
-}
-
 .hero {
   display: block;
   font-size: 18px;
