@@ -7,15 +7,16 @@
   .left_bar_wrapper {
     display: none;
   }
-  .hero_wrapper {
+  .hero {
     text-align: center;
     padding-left: 0;
-  }
-  .hero {
+    padding-right: 0;
     width: 100%;
-    padding-left: 0;
   }
-  .macro_block :last-child {
+  .hero > .macro_block {
+    display: block;
+  }
+  .macro_block {
     margin-bottom: var(--smartphone_outer_div_margin);
   }
   .macro_block ul {

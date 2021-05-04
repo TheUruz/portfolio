@@ -5,15 +5,20 @@
   --spacing-in-hero-div: 1rem;
 }
 
-.hero {
-  display: block;
-  font-size: 18px;
-  padding-left: var(--hero-padding-left);
-  background-color: white;
+.hero_container {
+  flex: 1;
 }
 
-.hero:first-child {
+.hero {
+  display: block;
+  min-height: 26.5625rem;
+  font-size: 18px;
+  padding-left: var(--hero-padding-left);
+  padding-right: var(--hero-padding-left);
+  background-color: white;
   padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex: inherit;
 }
 
 .macro_block {
@@ -25,8 +30,23 @@
   margin: var(--spacing-in-hero-div);
 }
 
-.macro_block > p {
+.hero_title {
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.description {
+  font-weight: normal;
+  text-justify: auto;
+  line-height: 1.8;
+}
+
+.quote {
+  padding: 2.5rem;
+  display: block;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .macro_block ul {

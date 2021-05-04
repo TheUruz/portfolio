@@ -5,6 +5,7 @@
 @import "hero.css";
 @import "left_bar.css";
 @import "media_queries.css";
+@import "helpers.css";
 
 /* VARIABLES */
 :root {
@@ -27,7 +28,6 @@ body {
 
 .mainframe_container {
   padding-top: var(--header_height);
-  /*height: 1000px;*/
   width: 100%;
   background-color: white;
   display: flex;

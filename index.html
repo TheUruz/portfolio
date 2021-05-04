@@ -27,23 +27,24 @@
 
         <!-- BARRA LATERALE SINITRA-->
         <div class="left_bar_wrapper">
-            <div class="nav__border"><p><</p></div>
-            <nav class="nav">
-                <a href="#" class="nav__link">
+            <div class="nav__border" id="nav_border"><p><</p></div>
+            <nav class="nav" id="navbar">
+                <!-- NAV_ESPERIENZA -->
+                <a href="#" class="nav__link" id="nav_esperienza">
                     <div class="nav__icon_container">
                         <i class="material-icons">work</i>
                     </div>
                     <span class="nav__label">Esperienza</span>
                 </a>
-
-                <a href="#" class="nav__link">
+                <!-- NAV_DATI_PESONALI -->
+                <a href="#" class="nav__link" id="nav_dati_personali">
                     <div class="nav__icon_container">
                         <i class="material-icons">perm_identity</i>
                     </div>
                     <span class="nav__label">Dati Personali</span>
                 </a>
-
-                <a href="#" class="nav__link">
+                <!-- NAV_OTHER -->
+                <a href="#" class="nav__link" id="nav_other">
                     <div class="nav__icon_container">
                         <i class="material-icons">view_list</i>
                     </div>
@@ -55,38 +56,53 @@
 
         <!-- HERO -->
         <div class="hero_container">
-            <div class="hero_wrapper">
-                <div class="hero">
+            <div class="hero" id="hero">
 
-                    <div class="macro_block">
-                        <p class="hero_title">ESPERIENZE DA PROGRAMMATORE</p>
-                        <ul>
-                            <li>Backend Developer presso CSI - Centro Servizi Industriali SCpA - Broni (PV)</li>
-                            <li>Collaboratore presso 40 Factory SRL - Piacenza</li>
-                            <li>Stagista presso Thinkopen SRL - Assago (MI)</li>
-                        </ul>
-                    </div>
+                <!-- DATI PERSONALI -->
+                <div class="macro_block" id="dati_personali">
+                    <p class="hero_title">informazioni personali</p>
+                    <p class="description">Da sempre appassionato di programmazione, di nuove tecnologie e dell'ambito IT in generale.
+                        Dopo gli studi da ragioniere programmatore presso l'I.T.C. Faravelli di Stradella (PV) mi sono dedicato a cercare occupazione nell'ambito informatico cercando tra le realtà a me vicine.
+                        Ho iniziato da piccole collaborazioni con imprese locali (principalmente manutenzione e assemblaggio di pc desktop), successivamente mi sono spostato a fare esperienza sulle moderne tecnologie cloud con un periodo di stage nella zona del basso milanese fino ad arrivare a sviluppare il backend dell'app gestionale del mio attuale luogo di lavoro. 
+                        Inoltre il mio stesso portfolio è un perenne WIP che sviluppo da autodidatta per ampliare le mie conoscenze in ambito frontend.
+                        <br><br>
+                        <span class="quote">
+                            <span>"Wisdom is not a product of schooling but of the lifelong attempt to acquire it"</span><br>
+                            Albert Einstein
+                        </span>
+                    </p><br>
+                    </p>
+                </div>
 
-                    <div class="macro_block">
-                        <p class="hero_title">ALTRE ESPERIENZE LAVORATIVE</p>
-                        <ul>
-                            <li>Sistemista Hardware presso IT-Zambelli - Broni (PV)</li>
-                            <li>Cameriere presso Liros di ReLi SRL - Broni (PV)</li>
-                        </ul>
-                    </div>
+                <!-- ESPERIENZA -->
+                <div class="macro_block" id="esperienza">
+                    <p class="hero_title">esperienze da programmatore</p>
+                    <ul>
+                        <li>Backend Developer presso CSI - Centro Servizi Industriali SCpA - Broni (PV)</li>
+                        <li>Collaboratore presso 40 Factory SRL - Piacenza</li>
+                        <li>Stagista presso Thinkopen SRL - Assago (MI)</li>
+                    </ul>
 
-                    
-                    <div class="macro_block">
-                        <p class="hero_title">HOBBY & PASSIONI</p>
-                        <ul>
-                            <li>Gaming</li>
-                            <li>Teatro</li>
-                            <li>Doppiaggio</li>
-                            <li>Cucina</li>
-                        </ul>
-                    </div>
+                    <p class="hero_title">altre esperienze lavorative</p>
+                    <ul>
+                        <li>Sistemista Hardware presso IT-Zambelli - Broni (PV)</li>
+                        <li>Cameriere presso Liros di ReLi SRL - Broni (PV)</li>
+                    </ul>
+
 
                 </div>
+
+                <!-- ALTRE INFORMAZIONI -->
+                <div class="macro_block" id="other">
+                    <p class="hero_title">HOBBY & PASSIONI</p>
+                    <ul>
+                        <li>Gaming</li>
+                        <li>Teatro</li>
+                        <li>Doppiaggio</li>
+                        <li>Cucina</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
@@ -118,5 +134,7 @@
         </div>
     </footer>
 
+<!-- SET DEFAULT -->
+<script src="js/init.js"></script>
 </body>
 </html>
